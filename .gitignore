@@ -1,0 +1,14 @@
+# Ignore Docker and Compose files
+docker-compose.override.yml
+*.dockerignore
+
+# IDE Settings
+.idea/
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
