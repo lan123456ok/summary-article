@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+.env
+
+# Local config files
+.vscode/
+*.log
+
+# Ignore git files
+.git
+.gitignore
+
+# Misc
+.DS_Store
+
+.log
