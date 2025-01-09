@@ -1,0 +1,118 @@
+2025-01-09 16:46:04,965 - app.utils - ERROR - Error creating indexes: too many values to unpack (expected 2)
+2025-01-09 16:48:40,843 - app.utils - ERROR - Error creating indexes: too many values to unpack (expected 2)
+2025-01-09 17:00:05,952 - app.utils - ERROR - Error creating indexes: MotorCollection object is not callable. If you meant to call the 'create_index' method on a MotorCollection object it is failing because no such method exists.
+2025-01-09 17:05:43,054 - app.utils - ERROR - Error creating indexes: too many values to unpack (expected 2)
+2025-01-09 17:08:45,339 - app.utils - ERROR - Error creating indexes: too many values to unpack (expected 2)
+2025-01-09 17:11:34,113 - app.utils - ERROR - Error creating indexes: too many values to unpack (expected 2)
+2025-01-09 17:11:48,410 - app.utils - ERROR - Error creating indexes: too many values to unpack (expected 2)
+2025-01-09 17:18:53,502 - app.utils - ERROR - Error creating indexes: too many values to unpack (expected 2)
+2025-01-09 17:19:13,113 - app.utils - ERROR - Error creating indexes: too many values to unpack (expected 2)
+2025-01-09 19:11:09,100 - app.utils - ERROR - Error creating indexes: too many values to unpack (expected 2)
+2025-01-09 19:14:52,127 - app.utils - ERROR - Error creating indexes: too many values to unpack (expected 2)
+2025-01-09 19:18:41,766 - app.utils - ERROR - Error creating indexes: {'key': [('link_url', 1)], 'unique': True, 'name': 'unique_link_url'} is not an instance of pymongo.operations.IndexModel
+2025-01-09 19:19:49,992 - app.utils - ERROR - Error creating indexes: {'key': [('link_url', 1)], 'unique': True, 'name': 'unique_link_url'} is not an instance of pymongo.operations.IndexModel
+2025-01-09 19:37:03,088 - app.utils - ERROR - Error creating indexes: {'key': [{'link_url': 1}], 'unique': True, 'name': 'unique_link_url'} is not an instance of pymongo.operations.IndexModel
+2025-01-09 19:37:51,681 - app.utils - ERROR - Error creating indexes: {'key': [('link_url', 1)], 'unique': True, 'name': 'unique_link_url'} is not an instance of pymongo.operations.IndexModel
+2025-01-09 20:35:00,695 - app.utils - ERROR - Error creating indexes: Collection.create_indexes() takes from 2 to 4 positional arguments but 5 were given
+2025-01-09 20:35:45,912 - app.utils - ERROR - Error creating indexes: Collection.create_indexes() takes from 2 to 4 positional arguments but 5 were given
+2025-01-09 20:36:03,459 - app.utils - ERROR - Error creating indexes: Collection.create_indexes() takes from 2 to 4 positional arguments but 5 were given
+2025-01-09 20:36:18,802 - app.utils - ERROR - Error creating indexes: Collection.create_indexes() takes from 2 to 4 positional arguments but 5 were given
+2025-01-09 20:39:45,455 - app.utils - ERROR - Error creating indexes: MotorCollection object is not callable. If you meant to call the 'getIndexes' method on a MotorCollection object it is failing because no such method exists.
+2025-01-09 20:40:14,052 - app.utils - ERROR - Error creating indexes: MotorCollection object is not callable. If you meant to call the 'articles.getIndexes' method on a MotorCollection object it is failing because no such method exists.
+2025-01-09 20:40:34,167 - app.utils - ERROR - Error creating indexes: Collection.create_indexes() takes from 2 to 4 positional arguments but 5 were given
+2025-01-09 20:50:34,396 - app.utils - ERROR - Unhandled error: 30 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 1), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 2), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 3), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 4), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 5), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 6), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 7), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 8), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 9), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 10), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 11), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 12), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 13), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 14), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 15), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 16), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 17), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 18), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 19), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 20), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 21), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 22), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 23), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 24), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 25), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 26), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 27), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 28), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 29), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\fastapi\routing.py", line 327, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\MyPlace\Study\web-scrapping-101\backend\.venv\Lib\site-packages\fastapi\routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 30 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 1), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 2), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 3), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 4), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 5), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 6), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 7), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 8), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 9), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 10), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 11), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 12), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 13), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 14), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 15), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 16), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 17), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 18), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 19), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 20), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 21), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 22), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 23), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 24), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 25), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 26), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 27), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 28), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+  {'type': 'model_attributes_type', 'loc': ('response', 29), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': None}
+
