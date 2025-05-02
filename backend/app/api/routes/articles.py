@@ -29,7 +29,7 @@ async def scrape_and_store_articles(db=Depends(get_db)):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@router.get("/", response_model=Page[ArticleBase])
+@router.get("/", response_model=Page[ArticleDB])
 async def get_articles(
         db=Depends(get_db),
         category: str | None = None,
@@ -37,7 +37,7 @@ async def get_articles(
 ):
     try:
         articles = await fetch_articles_from_db(db['articles'], category, q)
-        result = [ArticleBase(**article) for article in articles]
+        result = [ArticleDB(**article) for article in articles]
         disable_installed_extensions_check()
         return paginate(result)
     except Exception as e:
