@@ -71,6 +71,10 @@ const NewsCard: React.FC<NewsCardProps> = ({
             'bg-pink-500', 'bg-orange-500', 'bg-lime-500', 'bg-emerald-500', 'bg-violet-500',
         ];
 
+        if (!category || category.length === 0) {
+            return 'bg-gray-500';
+        }
+
         let hash = 0;
         for (let i = 0; i < category.length; i++) {
             hash = category.charCodeAt(i) + ((hash << 5) - hash);
@@ -108,7 +112,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
                         getCategoryColor(category)
                     )}
                 >
-                    {category}
+                    {category ? category : 'Không có'}
                 </div>
             </div>
 
