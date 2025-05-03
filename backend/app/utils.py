@@ -15,6 +15,7 @@ error_file_handler.setLevel(logging.ERROR)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    encoding='utf-8',
     handlers=[
         console_handler,
         file_handler,

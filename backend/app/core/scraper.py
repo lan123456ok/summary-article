@@ -1,3 +1,4 @@
+import asyncio
 from typing import Optional, Dict, Any
 import time
 from bs4 import BeautifulSoup
@@ -7,6 +8,7 @@ from ..models import ArticleBase
 from .config import settings
 from ..utils import logger
 from .error_handles import ArticleScrapingError
+from .summarizer import ArticleSummarizer
 
 
 class ArticleScrapper:
@@ -72,7 +74,8 @@ class ArticleScrapper:
                 'description': None,
                 'image_url': None,
                 'category': None,
-                'content': None
+                'content': None,
+                'summary': None
             }
 
             location_tag = article.find('span', class_='location-stamp')
@@ -101,6 +104,18 @@ class ArticleScrapper:
                 article_data['content'] = content_data['content']
                 article_data['category'] = content_data['category']
 
+                if article_data['content'] and len(article_data['content']) > 100:
+                    try:
+                        summarizer = ArticleSummarizer()
+
+                        article_data['summary'] = await summarizer.generate_summary(
+                            article_data['content'],
+                            article_data['title']
+                        )
+                    except Exception as e:
+                        logger.error(f"Error generating summary: {str(e)}")
+                        pass
+
             logger.info(f"Successfully extracted article info: {article_data['title']}")
             return ArticleBase(**article_data)
 
@@ -108,7 +123,7 @@ class ArticleScrapper:
             logger.error(f"Error extracting article info: {str(e)}")
             return None
 
-    async def scrape_articles(self) -> list[ArticleBase]:
+    async def scrape_articles(self, batch_size: int = 5) -> list[ArticleBase]:
         articles_data = []
 
         try:
@@ -124,7 +139,7 @@ class ArticleScrapper:
 
             logger.info(f"Found {len(articles)} articles to process")
 
-            for article in articles:
+            for i, article in enumerate(articles):
                 if article.find('ins', class_='adsbyeclick') or article.find('script'):
                     continue
 
@@ -132,7 +147,12 @@ class ArticleScrapper:
                     article_info = await self.extract_article_info(article)
                     if article_info:
                         articles_data.append(article_info)
-                        time.sleep(settings.RATE_LIMIT_DELAY)
+
+                        await asyncio.sleep(settings.RATE_LIMIT_DELAY)
+
+                        if len(articles_data) % batch_size == 0:
+                            logger.info(f"Processed {len(articles_data)} articles. Taking a batch delay...")
+                            await asyncio.sleep(settings.RATE_LIMIT_DELAY * 3)
 
             logger.info(f"Successfully scraped {len(articles_data)} articles")
             return articles_data
