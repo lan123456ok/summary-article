@@ -1,5 +1,5 @@
 import asyncio
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 import time
 from bs4 import BeautifulSoup
 import requests
@@ -41,7 +41,7 @@ class ArticleScrapper:
             full_text = ' '.join(content)
 
             ul = article_soup.find('ul', class_='breadcrumb')
-            category_tag = ul.find('a', {'data-medium': True})
+            category_tag = ul.find('a', {'data-medium': True}) if ul else None
             category = category_tag.get_text(strip=True) if category_tag else None
 
             logger.info(f"Successfully extracted content from: {article_url}")
@@ -133,6 +133,8 @@ class ArticleScrapper:
                 timeout=settings.REQUEST_TIMEOUT
             )
             result.raise_for_status()
+
+            result.encoding = 'utf-8'
 
             soup = BeautifulSoup(result.text, "html5lib")
             articles = soup.find_all("article", class_="thumb-left")
