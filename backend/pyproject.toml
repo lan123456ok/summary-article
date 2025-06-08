@@ -3,9 +3,10 @@ name = "backend"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
-    { name = "lan123456ok", email = "bachomuonnam123@gmail.com" }
+    { name = "yourname", email = "youremail" }
 ]
 dependencies = [
+    "apscheduler>=3.11.0",
     "beautifulsoup4>=4.12.3",
     "fastapi>=0.115.6",
     "fastapi-pagination>=0.12.34",
