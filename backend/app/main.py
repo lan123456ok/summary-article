@@ -8,6 +8,7 @@ from starlette.middleware.cors import CORSMiddleware
 
 from .core.database import MongoDB
 from .core.config import settings
+from .core.scheduler import article_scheduler
 from .api.main import api_router
 from .core.error_handles import (
     ArticleException,
@@ -30,12 +31,18 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
 
         await MongoDB.setup_indexes()
 
+        # await article_scheduler.start_scheduler(interval_minutes=30)
+
         yield
     except Exception as e:
         logger.error(f"Failed to connect to MongoDB: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Failed to connect to MongoDB")
     finally:
         try:
+            if article_scheduler.is_running:
+                await article_scheduler.stop_scheduler()
+                logger.info("Article scheduler stopped")
+
             MongoDB.close_client()
             logger.info("Disconnected from MongoDB")
         except Exception as e:
